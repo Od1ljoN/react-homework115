@@ -1,0 +1,360 @@
+.Hero {
+    min-height: 90vh;
+    position: relative;
+
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+    .text {
+        height: 50vh;
+        width: 30%;
+        border-radius: 30px;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        background-color: transparent;
+        z-index: 1;
+
+        -webkit-box-shadow: -1px 3px 124px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 3px 124px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 3px 124px 0px rgba(0, 0, 0, 0.75);
+
+        h1 {
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+        .men {
+            font-size: 20px;
+            padding-left: 3%;
+        }
+
+        .game {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 5% 0 5% 3%;
+        }
+
+        .bilim {
+            font-size: 20px;
+            line-height: 30px;
+            padding-left: 3%;
+        }
+    }
+
+    .doyra {
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        top: 5%;
+        left: 5%;
+        background-color: #C72CC7;
+        border: 1px double #C72CC7;
+        border-radius: 50%;
+
+        -webkit-box-shadow: 0px 31px 300px 94px rgba(199, 44, 199, 1);
+        -moz-box-shadow: 0px 31px 300px 94px rgba(199, 44, 199, 1);
+        box-shadow: 0px 31px 300px 94px rgba(199, 44, 199, 1);
+    }
+
+    .box {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        background: transparent;
+        border-radius: 50%;
+        overflow: hidden;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: -10px 140px;
+            background: linear-gradient(red, blue);
+            transition: 0.5s;
+            animation: animate 4s linear infinite;
+        }
+
+        &:hover::before {
+            inset: -20px 0px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            background: linear-gradient(315deg, #00ccff, #d400d4);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content {
+            position: absolute;
+            inset: 30px;
+            border: 6px solid #070a1c;
+            z-index: 3;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+                pointer-events: none;
+                z-index: 3;
+            }
+
+            h2 {
+                position: relative;
+                font-size: 1.5em;
+                text-align: center;
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+            }
+
+            a {
+                position: relative;
+                margin-top: 10px;
+                padding: 10px 20px;
+                background: #fff;
+                color: #070a1c;
+                border-radius: 25px;
+                font-weight: 500;
+                font-size: 1.25em;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    letter-spacing: 0.5em;
+                }
+            }
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .box:hover .content img {
+        opacity: 0;
+    }
+}
+
+@media screen and(max-width: 1200px) {
+    .Hero {
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 14%;
+        }
+
+        .box {
+            position: absolute;
+            right: 14%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 1150px) {
+    .Hero {
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 13%;
+        }
+
+        .box {
+            position: absolute;
+            right: 13%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 1100px) {
+    .Hero {
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 12%;
+        }
+
+        .box {
+            position: absolute;
+            right: 12%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 1050px) {
+    .Hero {
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 11%;
+        }
+
+        .box {
+            position: absolute;
+            right: 11%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 1000px) {
+    .Hero {
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+
+        .box {
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 930px) {
+    .Hero {
+        .text {
+            width: 35%;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+        }
+
+        .box {
+            position: absolute;
+            right: 5%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 890px) {
+    .Hero {
+        .text {
+            width: 40%;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+        }
+
+        .box {
+            position: absolute;
+            right: 5%;
+            top: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 830px) {
+    .Hero {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+
+        .text {
+            height: 30vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 60%;
+            text-align: center;
+
+            h1 {
+                display: none;
+            }
+
+            .men {
+                font-size: 20px;
+                padding-left: 3%;
+            }
+
+            .game {
+                font-size: 20px;
+                line-height: 30px;
+                padding: 1.5% 0 1.5% 3%;
+            }
+
+            .bilim {
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 3%;
+            }
+        }
+
+        .box {
+            height: 50vh;
+            width: 50vh;
+            top: 0;
+            left: 25%;
+        }
+    }
+}
+
+@media screen and(max-width: 700px) {
+    .Hero {
+        .box {
+            left: 23%;
+        }
+    }
+}
+
+@media screen and(max-width: 650px) {
+    .Hero {
+        .box {
+            left: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .Hero {
+        .box {
+            left: 17%;
+        }
+    }
+}
+
+@media screen and(max-width: 570px) {
+    .Hero {
+        .box {
+            left: 15%;
+        }
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .Hero {
+        .box {
+            left: 12%;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.Bhad {
+    min-height: 90vh;
+    background-color: #999;
+    display: flex;
+
+    .left {
+        width: 45%;
+
+        .text {
+            width: 100%;
+            padding: 5% 0 5% 10%;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 60px;
+            }
+
+            h2 {
+                font-size: 50px;
+                padding: 2% 0;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+
+        .img_div {
+            height: 50vh;
+            width: 85%;
+            text-align: center;
+
+            img {
+                height: 55vh;
+                width: 450px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .right {
+        height: 90vh;
+        width: 53%;
+        background-color: pink;
+
+        .slider {
+            padding: 10%;
+
+            .music {
+
+                .imgdiv {
+
+                    img {
+                        height: 50px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

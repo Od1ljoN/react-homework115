@@ -1,0 +1,62 @@
+.Bhad {
+  min-height: 90vh;
+  background-color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Bhad .left {
+  width: 45%;
+}
+
+.Bhad .left .text {
+  width: 100%;
+  padding: 5% 0 5% 10%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Bhad .left .text h1 {
+  font-size: 60px;
+}
+
+.Bhad .left .text h2 {
+  font-size: 50px;
+  padding: 2% 0;
+}
+
+.Bhad .left .text p {
+  font-size: 25px;
+}
+
+.Bhad .left .img_div {
+  height: 50vh;
+  width: 85%;
+  text-align: center;
+}
+
+.Bhad .left .img_div img {
+  height: 55vh;
+  width: 450px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Bhad .right {
+  height: 90vh;
+  width: 53%;
+  background-color: pink;
+}
+
+.Bhad .right .slider {
+  padding: 10%;
+}
+
+.Bhad .right .slider .music .imgdiv img {
+  height: 50px;
+  width: 100px;
+}
+/*# sourceMappingURL=Bhad.css.map */

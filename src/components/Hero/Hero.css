@@ -1,0 +1,352 @@
+.Hero {
+  min-height: 90vh;
+  position: relative;
+  background: #833ab4;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}
+
+.Hero .text {
+  height: 50vh;
+  width: 30%;
+  border-radius: 30px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  background-color: transparent;
+  z-index: 1;
+  -webkit-box-shadow: -1px 3px 124px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 124px 0px rgba(0, 0, 0, 0.75);
+}
+
+.Hero .text h1 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.Hero .text .men {
+  font-size: 20px;
+  padding-left: 3%;
+}
+
+.Hero .text .game {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 5% 0 5% 3%;
+}
+
+.Hero .text .bilim {
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 3%;
+}
+
+.Hero .doyra {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 5%;
+  left: 5%;
+  background-color: #C72CC7;
+  border: 1px double #C72CC7;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 31px 300px 94px #c72cc7;
+  box-shadow: 0px 31px 300px 94px #c72cc7;
+}
+
+.Hero .box {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Hero .box::before {
+  content: '';
+  position: absolute;
+  inset: -10px 140px;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+  background: linear-gradient(red, blue);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.Hero .box:hover::before {
+  inset: -20px 0px;
+}
+
+.Hero .box::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.Hero .box .content {
+  position: absolute;
+  inset: 30px;
+  border: 6px solid #070a1c;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Hero .box .content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.Hero .box .content h2 {
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.Hero .box .content a {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #070a1c;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Hero .box .content a:hover {
+  letter-spacing: 0.5em;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.Hero .box:hover .content img {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .Hero .text {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 14%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .Hero .text {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 13%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Hero .text {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 12%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .Hero .text {
+    position: absolute;
+    top: 20%;
+    left: 11%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 11%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Hero .text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .Hero .text {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .Hero .text {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  .Hero .box {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .Hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Hero .text {
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    text-align: center;
+  }
+  .Hero .text h1 {
+    display: none;
+  }
+  .Hero .text .men {
+    font-size: 20px;
+    padding-left: 3%;
+  }
+  .Hero .text .game {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 1.5% 0 1.5% 3%;
+  }
+  .Hero .text .bilim {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 3%;
+  }
+  .Hero .box {
+    height: 50vh;
+    width: 50vh;
+    top: 0;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Hero .box {
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Hero .box {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Hero .box {
+    left: 17%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .Hero .box {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Hero .box {
+    left: 12%;
+  }
+}
+/*# sourceMappingURL=Hero.css.map */

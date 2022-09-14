@@ -1,0 +1,656 @@
+.NF {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+    background: rgb(49, 49, 51);
+    background: linear-gradient(90deg, rgba(49, 49, 51, 1) 15%, rgba(29, 29, 31, 1) 81%);
+
+    img {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .hero {
+        height: 90vh;
+
+        .left {
+            height: 100%;
+            width: 80px;
+            background: transparent;
+            border-right: 4px solid black;
+            z-index: 1;
+            position: absolute;
+
+            h1 {
+                height: 60vh;
+                text-align: center;
+                padding-top: 10%;
+            }
+
+            .icons {
+                height: 20vh;
+
+
+                .icon {
+                    font-size: 25px;
+                    margin: 30% 30%;
+                    display: block;
+                }
+            }
+        }
+
+
+        .centr {
+            height: 65vh;
+            width: 100%;
+            padding: 5% 0 0 15%;
+            display: flex;
+
+            .center-left {
+                width: 45%;
+
+                h2 {
+                    color: #fff;
+                }
+
+                .chiziq {
+                    height: 1px;
+                    width: 60%;
+
+                    background: rgb(210, 214, 14);
+                    background: linear-gradient(90deg, rgba(210, 214, 14, 1) 73%, rgba(17, 17, 17, 1) 74%);
+                }
+
+                .text {
+                    padding-top: 2%;
+
+                    p {
+                        width: 30%;
+                        padding-top: 1%;
+                        color: #666;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .center-right {
+                width: 50%;
+
+                h1 {
+                    color: #fff;
+                    width: 50%;
+                    font-size: 50px;
+                }
+
+                p {
+                    padding-top: 1%;
+                    width: 70%;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .past {
+            height: 25vh;
+            width: 94.6%;
+            padding-left: 5%;
+            position: absolute;
+            right: 0.2%;
+            z-index: 0;
+            background-color: #222;
+            display: flex;
+
+            .chap {
+                width: 49%;
+                display: flex;
+                padding: 3% 0;
+
+                h1 {
+                    color: #fff;
+                }
+
+                .bosh {
+                    p {
+                        font-size: 20px;
+                        color: #666;
+                    }
+
+                    h2 {
+                        color: #fff;
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                }
+
+                .markaz {
+                    padding-left: 15%;
+
+                    p {
+                        font-size: 20px;
+                        color: #666;
+                    }
+
+                    h2 {
+                        color: #fff;
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            .ong {
+                width: 50%;
+                display: flex;
+
+                img {
+                    height: 186px;
+                    width: 180px;
+                    object-fit: cover;
+                }
+
+                .text {
+                    padding: 3% 0;
+                    padding-left: 7%;
+
+                    h2 {
+                        padding: 2% 0;
+                        color: #fff;
+                    }
+
+                    p {
+                        line-height: 30px;
+                        color: #666;
+                    }
+
+                    h5 {
+                        padding-top: 10%;
+                        font-size: 20px;
+                        color: #F4E241;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1400px) {
+    .NF {
+        .hero {
+            .centr {
+                .center-left {
+                    width: 46%;
+                }
+
+                .center-right {
+                    h1 {
+                        font-size: 45px;
+                    }
+                }
+            }
+
+            .past {
+                width: 94.1%;
+                padding-left: 4%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1270px) {
+    .NF {
+        .hero {
+            .centr {
+                padding: 3% 0 0 15%;
+
+                .center-left {
+                    width: 46%;
+                }
+
+                .center-right {
+                    h1 {
+                        width: 49%;
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .past {
+                width: 93.4%;
+                padding-left: 3%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1230px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    .text {
+
+                        p {
+                            line-height: 20px;
+                        }
+
+                        h5 {
+                            position: absolute;
+                            bottom: 6%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1150px) {
+    .NF {
+        .hero {
+            .centr {
+                padding: 3% 0 0 15%;
+
+                .center-left {
+                    width: 47%;
+                }
+
+                .center-right {
+                    h1 {
+                        font-size: 35px;
+                    }
+                }
+            }
+
+            .past {
+                width: 92.8%;
+                padding-left: 4%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1060px) {
+    .NF {
+        .hero {
+            .centr {
+                padding: 5% 0 0 15%;
+            }
+
+            .past {
+                width: 92.2%;
+                padding-left: 4%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 970px) {
+    .NF {
+        .hero {
+            .past {
+                width: 91.5%;
+                padding-left: 4%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 930px) {
+    .NF {
+        .hero {
+            .centr {
+                .center-left {
+                    height: 20vh;
+                    width: 47%;
+                }
+
+                .center-right {
+                    width: 50%;
+
+                    h1 {
+                        color: #fff;
+                        width: 70%;
+                        font-size: 30px;
+                    }
+
+                    p {
+                        padding-top: 1%;
+                        width: 70%;
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            .past {
+                height: 60vh;
+                padding-left: 5%;
+                position: absolute;
+                bottom: 0;
+                background-color: transparent;
+
+
+                .chap {
+                    display: block;
+
+                    .bosh {
+                        padding: 5% 0;
+                    }
+
+                    .markaz {
+                        padding-left: 0;
+                    }
+                }
+
+                .ong {
+                    width: 50%;
+
+                    img {
+                        height: 400px;
+                        width: 370px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        position: absolute;
+                        right: 6%;
+                        bottom: 1%;
+                    }
+
+                    .text {
+                        padding: 0;
+                        position: absolute;
+                        left: 5.5%;
+                        bottom: 21%;
+
+                        p {
+                            line-height: 30px;
+                        }
+
+                        h5 {
+                            position: absolute;
+                            bottom: -30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 910px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 400px;
+                        width: 370px;
+                        right: 4%;
+                        bottom: 1%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 870px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 380px;
+                        width: 350px;
+                        right: 5%;
+                        bottom: 4%;
+                    }
+
+                    .text {
+                        left: 5.5%;
+                        bottom: 15%;
+
+                        p {
+                            width: 90%;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 840px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 380px;
+                        width: 350px;
+                        right: 3%;
+                        bottom: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 810px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 380px;
+                        width: 350px;
+                        right: 2%;
+                        bottom: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 780px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 370px;
+                        width: 340px;
+                        right: 1%;
+                        bottom: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 780px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 370px;
+                        width: 340px;
+                        right: 1%;
+                        bottom: 4%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 760px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 360px;
+                        width: 325px;
+                        right: 2.5%;
+                        bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 740px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 350px;
+                        width: 320px;
+                        right: 2.5%;
+                        bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 730px) {
+    .NF {
+        .hero {
+            .past {
+                .ong {
+                    img {
+                        height: 350px;
+                        width: 318px;
+                        right: 2%;
+                        bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 710px) {
+    .NF {
+        .hero {
+            .left {
+                display: flex;
+                height: 7vh;
+                width: 200px;
+                border-right: 0;
+
+                h1 {
+                    padding-top: 5%;
+                }
+
+                .icons {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+
+                    .icon {
+                        font-size: 25px;
+                        margin: 10%;
+                        display: inline;
+                    }
+                }
+            }
+
+            .centr {
+                padding: 10% 0 0 2%;
+
+                .center-left {
+                    height: 20vh;
+                    width: 40%;
+
+                    .text {
+                        p {
+                            padding-top: 2%;
+                            width: 50%;
+                        }
+                    }
+                }
+
+                .center-right {
+                    text-align: center;
+                    position: absolute;
+                    right: 0;
+                    bottom: 5%;
+                }
+            }
+
+            .past {
+                height: 60vh;
+                padding-left: 5%;
+                position: absolute;
+                bottom: 0;
+                left: 1%;
+                padding: 0;
+
+                .chap {
+                    display: flex;
+                    height: 30vh;
+                    width: 100%;
+
+                    h1 {
+                        display: none;
+                    }
+
+                    .bosh {
+                        padding: 0;
+
+                        p {
+                            width: 90%;
+                        }
+                    }
+
+                    .markaz {
+                        position: absolute;
+                        left: 0;
+                        top: 27%;
+                        padding-left: 0;
+
+                        p {
+                            width: 90%;
+                        }
+                    }
+                }
+
+                .ong {
+                    img {
+                        height: 300px;
+                        width: 300px;
+                        right: -6%;
+                        top: -46%;
+                    }
+
+                    .text {
+                        position: absolute;
+                        left: 1px;
+                        bottom: 20%;
+
+                        p {
+                            width: 70%;
+                        }
+
+                        h5 {
+                            position: absolute;
+                            bottom: -30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
